@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create a Serverless stack with CloudFormation using Serverless Application Model
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  GetFunction:
+    Type: AWS::Serverless::Function
+    Description: Use a lambda function to retrieve state from DynamoDB and return the result in HTML or JSON
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs4.3
+      CodeUri: s3://REPLACE_ME/code.zip
+      Policies: AmazonDynamoDBFullAccess
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref Table
+      Events:
+        GetResource:
+          Type: Api
+          Properties:
+            Path: /{request+}
+            Method: get
+
+  Table:
+    Type: AWS::Serverless::SimpleTable
