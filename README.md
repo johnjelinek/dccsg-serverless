@@ -1,7 +1,7 @@
 # dccsg-serverless
 Building a Serverless Architecture
 
-Here are the assets required to accompany the [interactive lab](https://linuxacademy.com/cp/livelabs/view/id/134).
+Here are the assets to complete the [interactive lab](https://linuxacademy.com/cp/livelabs/view/id/134).
 
 ## Deployment Steps
 
