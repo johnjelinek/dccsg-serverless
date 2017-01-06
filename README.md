@@ -2,6 +2,7 @@
 Building a Serverless Architecture
 
 Here are the assets to complete the [interactive lab](https://linuxacademy.com/cp/livelabs/view/id/134).
+Review the [presentation slide deck](https://github.com/johnjelinek/dccsg-serverless/blob/master/Building%20a%20Serverless%20Architecture.pdf).
 
 ## Deployment Steps
 
